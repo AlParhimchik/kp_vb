@@ -23,22 +23,22 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.btn_execute = New System.Windows.Forms.Button()
-        Me.TextBox49 = New System.Windows.Forms.TextBox()
+        Me.box_for_gamma2 = New System.Windows.Forms.TextBox()
         Me.Label24 = New System.Windows.Forms.Label()
-        Me.TextBox50 = New System.Windows.Forms.TextBox()
+        Me.box_for_gamma1 = New System.Windows.Forms.TextBox()
         Me.Label25 = New System.Windows.Forms.Label()
         Me.Label23 = New System.Windows.Forms.Label()
-        Me.TextBox47 = New System.Windows.Forms.TextBox()
+        Me.box_for_Ttop = New System.Windows.Forms.TextBox()
         Me.Label20 = New System.Windows.Forms.Label()
-        Me.TextBox48 = New System.Windows.Forms.TextBox()
+        Me.box_for_Tb = New System.Windows.Forms.TextBox()
         Me.Label21 = New System.Windows.Forms.Label()
         Me.Label22 = New System.Windows.Forms.Label()
-        Me.TextBox46 = New System.Windows.Forms.TextBox()
+        Me.box_for_Tmax = New System.Windows.Forms.TextBox()
         Me.Label19 = New System.Windows.Forms.Label()
-        Me.TextBox45 = New System.Windows.Forms.TextBox()
+        Me.box_for_Tmin = New System.Windows.Forms.TextBox()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
-        Me.TextBox44 = New System.Windows.Forms.TextBox()
+        Me.box_for_T_after_ex = New System.Windows.Forms.TextBox()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.TextBox36 = New System.Windows.Forms.TextBox()
         Me.TextBox37 = New System.Windows.Forms.TextBox()
@@ -46,12 +46,12 @@ Partial Class Form1
         Me.TextBox39 = New System.Windows.Forms.TextBox()
         Me.TextBox40 = New System.Windows.Forms.TextBox()
         Me.TextBox41 = New System.Windows.Forms.TextBox()
-        Me.TextBox42 = New System.Windows.Forms.TextBox()
-        Me.TextBox43 = New System.Windows.Forms.TextBox()
+        Me.box_for_Ts2_after_ex = New System.Windows.Forms.TextBox()
+        Me.box_for_Ts1_after_ex = New System.Windows.Forms.TextBox()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.TextBox35 = New System.Windows.Forms.TextBox()
+        Me.bot_E_after_ex = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.TextBox34 = New System.Windows.Forms.TextBox()
+        Me.box_M_after_ex = New System.Windows.Forms.TextBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.box_for_Ts = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
@@ -115,13 +115,13 @@ Partial Class Form1
         Me.btn_execute.Text = "Вычислить"
         Me.btn_execute.UseVisualStyleBackColor = True
         '
-        'TextBox49
+        'box_for_gamma2
         '
-        Me.TextBox49.Location = New System.Drawing.Point(490, 344)
-        Me.TextBox49.Name = "TextBox49"
-        Me.TextBox49.ReadOnly = True
-        Me.TextBox49.Size = New System.Drawing.Size(51, 20)
-        Me.TextBox49.TabIndex = 152
+        Me.box_for_gamma2.Location = New System.Drawing.Point(490, 344)
+        Me.box_for_gamma2.Name = "box_for_gamma2"
+        Me.box_for_gamma2.ReadOnly = True
+        Me.box_for_gamma2.Size = New System.Drawing.Size(51, 20)
+        Me.box_for_gamma2.TabIndex = 152
         '
         'Label24
         '
@@ -132,13 +132,13 @@ Partial Class Form1
         Me.Label24.TabIndex = 151
         Me.Label24.Text = "Y2"
         '
-        'TextBox50
+        'box_for_gamma1
         '
-        Me.TextBox50.Location = New System.Drawing.Point(361, 344)
-        Me.TextBox50.Name = "TextBox50"
-        Me.TextBox50.ReadOnly = True
-        Me.TextBox50.Size = New System.Drawing.Size(51, 20)
-        Me.TextBox50.TabIndex = 150
+        Me.box_for_gamma1.Location = New System.Drawing.Point(361, 344)
+        Me.box_for_gamma1.Name = "box_for_gamma1"
+        Me.box_for_gamma1.ReadOnly = True
+        Me.box_for_gamma1.Size = New System.Drawing.Size(51, 20)
+        Me.box_for_gamma1.TabIndex = 150
         '
         'Label25
         '
@@ -158,13 +158,13 @@ Partial Class Form1
         Me.Label23.TabIndex = 148
         Me.Label23.Text = "Вероятности определения верхней и нижней границы интервальной оценки"
         '
-        'TextBox47
+        'box_for_Ttop
         '
-        Me.TextBox47.Location = New System.Drawing.Point(183, 402)
-        Me.TextBox47.Name = "TextBox47"
-        Me.TextBox47.ReadOnly = True
-        Me.TextBox47.Size = New System.Drawing.Size(51, 20)
-        Me.TextBox47.TabIndex = 147
+        Me.box_for_Ttop.Location = New System.Drawing.Point(183, 402)
+        Me.box_for_Ttop.Name = "box_for_Ttop"
+        Me.box_for_Ttop.ReadOnly = True
+        Me.box_for_Ttop.Size = New System.Drawing.Size(51, 20)
+        Me.box_for_Ttop.TabIndex = 147
         '
         'Label20
         '
@@ -175,13 +175,13 @@ Partial Class Form1
         Me.Label20.TabIndex = 146
         Me.Label20.Text = "TB"
         '
-        'TextBox48
+        'box_for_Tb
         '
-        Me.TextBox48.Location = New System.Drawing.Point(54, 402)
-        Me.TextBox48.Name = "TextBox48"
-        Me.TextBox48.ReadOnly = True
-        Me.TextBox48.Size = New System.Drawing.Size(51, 20)
-        Me.TextBox48.TabIndex = 145
+        Me.box_for_Tb.Location = New System.Drawing.Point(54, 402)
+        Me.box_for_Tb.Name = "box_for_Tb"
+        Me.box_for_Tb.ReadOnly = True
+        Me.box_for_Tb.Size = New System.Drawing.Size(51, 20)
+        Me.box_for_Tb.TabIndex = 145
         '
         'Label21
         '
@@ -201,13 +201,13 @@ Partial Class Form1
         Me.Label22.TabIndex = 143
         Me.Label22.Text = "Границы доверительного интервала"
         '
-        'TextBox46
+        'box_for_Tmax
         '
-        Me.TextBox46.Location = New System.Drawing.Point(183, 344)
-        Me.TextBox46.Name = "TextBox46"
-        Me.TextBox46.ReadOnly = True
-        Me.TextBox46.Size = New System.Drawing.Size(51, 20)
-        Me.TextBox46.TabIndex = 142
+        Me.box_for_Tmax.Location = New System.Drawing.Point(183, 344)
+        Me.box_for_Tmax.Name = "box_for_Tmax"
+        Me.box_for_Tmax.ReadOnly = True
+        Me.box_for_Tmax.Size = New System.Drawing.Size(51, 20)
+        Me.box_for_Tmax.TabIndex = 142
         '
         'Label19
         '
@@ -218,13 +218,13 @@ Partial Class Form1
         Me.Label19.TabIndex = 141
         Me.Label19.Text = "Tsmax"
         '
-        'TextBox45
+        'box_for_Tmin
         '
-        Me.TextBox45.Location = New System.Drawing.Point(54, 344)
-        Me.TextBox45.Name = "TextBox45"
-        Me.TextBox45.ReadOnly = True
-        Me.TextBox45.Size = New System.Drawing.Size(51, 20)
-        Me.TextBox45.TabIndex = 140
+        Me.box_for_Tmin.Location = New System.Drawing.Point(54, 344)
+        Me.box_for_Tmin.Name = "box_for_Tmin"
+        Me.box_for_Tmin.ReadOnly = True
+        Me.box_for_Tmin.Size = New System.Drawing.Size(51, 20)
+        Me.box_for_Tmin.TabIndex = 140
         '
         'Label18
         '
@@ -240,17 +240,17 @@ Partial Class Form1
         Me.Label17.AutoSize = True
         Me.Label17.Location = New System.Drawing.Point(13, 321)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(258, 13)
+        Me.Label17.Size = New System.Drawing.Size(255, 13)
         Me.Label17.TabIndex = 138
-        Me.Label17.Text = "Смоделированные щначения наработки на отказ"
+        Me.Label17.Text = "Смоделированные значения наработки на отказ"
         '
-        'TextBox44
+        'box_for_T_after_ex
         '
-        Me.TextBox44.Location = New System.Drawing.Point(284, 276)
-        Me.TextBox44.Name = "TextBox44"
-        Me.TextBox44.ReadOnly = True
-        Me.TextBox44.Size = New System.Drawing.Size(51, 20)
-        Me.TextBox44.TabIndex = 137
+        Me.box_for_T_after_ex.Location = New System.Drawing.Point(284, 276)
+        Me.box_for_T_after_ex.Name = "box_for_T_after_ex"
+        Me.box_for_T_after_ex.ReadOnly = True
+        Me.box_for_T_after_ex.Size = New System.Drawing.Size(51, 20)
+        Me.box_for_T_after_ex.TabIndex = 137
         '
         'Label16
         '
@@ -309,21 +309,21 @@ Partial Class Form1
         Me.TextBox41.Size = New System.Drawing.Size(51, 20)
         Me.TextBox41.TabIndex = 130
         '
-        'TextBox42
+        'box_for_Ts2_after_ex
         '
-        Me.TextBox42.Location = New System.Drawing.Point(324, 246)
-        Me.TextBox42.Name = "TextBox42"
-        Me.TextBox42.ReadOnly = True
-        Me.TextBox42.Size = New System.Drawing.Size(51, 20)
-        Me.TextBox42.TabIndex = 129
+        Me.box_for_Ts2_after_ex.Location = New System.Drawing.Point(324, 246)
+        Me.box_for_Ts2_after_ex.Name = "box_for_Ts2_after_ex"
+        Me.box_for_Ts2_after_ex.ReadOnly = True
+        Me.box_for_Ts2_after_ex.Size = New System.Drawing.Size(51, 20)
+        Me.box_for_Ts2_after_ex.TabIndex = 129
         '
-        'TextBox43
+        'box_for_Ts1_after_ex
         '
-        Me.TextBox43.Location = New System.Drawing.Point(267, 246)
-        Me.TextBox43.Name = "TextBox43"
-        Me.TextBox43.ReadOnly = True
-        Me.TextBox43.Size = New System.Drawing.Size(51, 20)
-        Me.TextBox43.TabIndex = 128
+        Me.box_for_Ts1_after_ex.Location = New System.Drawing.Point(267, 246)
+        Me.box_for_Ts1_after_ex.Name = "box_for_Ts1_after_ex"
+        Me.box_for_Ts1_after_ex.ReadOnly = True
+        Me.box_for_Ts1_after_ex.Size = New System.Drawing.Size(51, 20)
+        Me.box_for_Ts1_after_ex.TabIndex = 128
         '
         'Label15
         '
@@ -334,13 +334,13 @@ Partial Class Form1
         Me.Label15.TabIndex = 127
         Me.Label15.Text = "Наработка блоков за период испытания (Tsi) j=m"
         '
-        'TextBox35
+        'bot_E_after_ex
         '
-        Me.TextBox35.Location = New System.Drawing.Point(616, 220)
-        Me.TextBox35.Name = "TextBox35"
-        Me.TextBox35.ReadOnly = True
-        Me.TextBox35.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox35.TabIndex = 126
+        Me.bot_E_after_ex.Location = New System.Drawing.Point(616, 220)
+        Me.bot_E_after_ex.Name = "bot_E_after_ex"
+        Me.bot_E_after_ex.ReadOnly = True
+        Me.bot_E_after_ex.Size = New System.Drawing.Size(100, 20)
+        Me.bot_E_after_ex.TabIndex = 126
         '
         'Label14
         '
@@ -351,13 +351,13 @@ Partial Class Form1
         Me.Label14.TabIndex = 125
         Me.Label14.Text = "Точность оценки (E)"
         '
-        'TextBox34
+        'box_M_after_ex
         '
-        Me.TextBox34.Location = New System.Drawing.Point(308, 223)
-        Me.TextBox34.Name = "TextBox34"
-        Me.TextBox34.ReadOnly = True
-        Me.TextBox34.Size = New System.Drawing.Size(51, 20)
-        Me.TextBox34.TabIndex = 124
+        Me.box_M_after_ex.Location = New System.Drawing.Point(308, 223)
+        Me.box_M_after_ex.Name = "box_M_after_ex"
+        Me.box_M_after_ex.ReadOnly = True
+        Me.box_M_after_ex.Size = New System.Drawing.Size(51, 20)
+        Me.box_M_after_ex.TabIndex = 124
         '
         'Label13
         '
@@ -787,22 +787,22 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(846, 430)
         Me.Controls.Add(Me.btn_execute)
-        Me.Controls.Add(Me.TextBox49)
+        Me.Controls.Add(Me.box_for_gamma2)
         Me.Controls.Add(Me.Label24)
-        Me.Controls.Add(Me.TextBox50)
+        Me.Controls.Add(Me.box_for_gamma1)
         Me.Controls.Add(Me.Label25)
         Me.Controls.Add(Me.Label23)
-        Me.Controls.Add(Me.TextBox47)
+        Me.Controls.Add(Me.box_for_Ttop)
         Me.Controls.Add(Me.Label20)
-        Me.Controls.Add(Me.TextBox48)
+        Me.Controls.Add(Me.box_for_Tb)
         Me.Controls.Add(Me.Label21)
         Me.Controls.Add(Me.Label22)
-        Me.Controls.Add(Me.TextBox46)
+        Me.Controls.Add(Me.box_for_Tmax)
         Me.Controls.Add(Me.Label19)
-        Me.Controls.Add(Me.TextBox45)
+        Me.Controls.Add(Me.box_for_Tmin)
         Me.Controls.Add(Me.Label18)
         Me.Controls.Add(Me.Label17)
-        Me.Controls.Add(Me.TextBox44)
+        Me.Controls.Add(Me.box_for_T_after_ex)
         Me.Controls.Add(Me.Label16)
         Me.Controls.Add(Me.TextBox36)
         Me.Controls.Add(Me.TextBox37)
@@ -810,12 +810,12 @@ Partial Class Form1
         Me.Controls.Add(Me.TextBox39)
         Me.Controls.Add(Me.TextBox40)
         Me.Controls.Add(Me.TextBox41)
-        Me.Controls.Add(Me.TextBox42)
-        Me.Controls.Add(Me.TextBox43)
+        Me.Controls.Add(Me.box_for_Ts2_after_ex)
+        Me.Controls.Add(Me.box_for_Ts1_after_ex)
         Me.Controls.Add(Me.Label15)
-        Me.Controls.Add(Me.TextBox35)
+        Me.Controls.Add(Me.bot_E_after_ex)
         Me.Controls.Add(Me.Label14)
-        Me.Controls.Add(Me.TextBox34)
+        Me.Controls.Add(Me.box_M_after_ex)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.box_for_Ts)
         Me.Controls.Add(Me.Label12)
@@ -873,22 +873,22 @@ Partial Class Form1
     End Sub
 
     Friend WithEvents btn_execute As Button
-    Friend WithEvents TextBox49 As TextBox
+    Friend WithEvents box_for_gamma2 As TextBox
     Friend WithEvents Label24 As Label
-    Friend WithEvents TextBox50 As TextBox
+    Friend WithEvents box_for_gamma1 As TextBox
     Friend WithEvents Label25 As Label
     Friend WithEvents Label23 As Label
-    Friend WithEvents TextBox47 As TextBox
+    Friend WithEvents box_for_Ttop As TextBox
     Friend WithEvents Label20 As Label
-    Friend WithEvents TextBox48 As TextBox
+    Friend WithEvents box_for_Tb As TextBox
     Friend WithEvents Label21 As Label
     Friend WithEvents Label22 As Label
-    Friend WithEvents TextBox46 As TextBox
+    Friend WithEvents box_for_Tmax As TextBox
     Friend WithEvents Label19 As Label
-    Friend WithEvents TextBox45 As TextBox
+    Friend WithEvents box_for_Tmin As TextBox
     Friend WithEvents Label18 As Label
     Friend WithEvents Label17 As Label
-    Friend WithEvents TextBox44 As TextBox
+    Friend WithEvents box_for_T_after_ex As TextBox
     Friend WithEvents Label16 As Label
     Friend WithEvents TextBox36 As TextBox
     Friend WithEvents TextBox37 As TextBox
@@ -896,12 +896,12 @@ Partial Class Form1
     Friend WithEvents TextBox39 As TextBox
     Friend WithEvents TextBox40 As TextBox
     Friend WithEvents TextBox41 As TextBox
-    Friend WithEvents TextBox42 As TextBox
-    Friend WithEvents TextBox43 As TextBox
+    Friend WithEvents box_for_Ts2_after_ex As TextBox
+    Friend WithEvents box_for_Ts1_after_ex As TextBox
     Friend WithEvents Label15 As Label
-    Friend WithEvents TextBox35 As TextBox
+    Friend WithEvents bot_E_after_ex As TextBox
     Friend WithEvents Label14 As Label
-    Friend WithEvents TextBox34 As TextBox
+    Friend WithEvents box_M_after_ex As TextBox
     Friend WithEvents Label13 As Label
     Friend WithEvents box_for_Ts As TextBox
     Friend WithEvents Label12 As Label
