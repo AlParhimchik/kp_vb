@@ -28,23 +28,40 @@
     End Sub
 
     Private Sub RadioButton3_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton3.CheckedChanged
-        R(0) = 3
-        R(1) = 1
-        R(2) = 0
-        R(3) = 0
-        R(4) = 0
-        R(5) = 1
-        R(6) = 3
-        R(7) = 2
+        'R(0) = 3
+        'R(1) = 1
+        'R(2) = 0
+        'R(3) = 0
+        'R(4) = 0
+        'R(5) = 1
+        'R(6) = 3
+        'R(7) = 2
 
-        Tsumi(0) = 160
-        Tsumi(1) = 187
-        Tsumi(2) = 143
-        Tsumi(3) = 129
-        Tsumi(4) = 126
-        Tsumi(5) = 121
-        Tsumi(6) = 200
-        Tsumi(7) = 157
+        'Tsumi(0) = 160
+        'Tsumi(1) = 187
+        'Tsumi(2) = 143
+        'Tsumi(3) = 129
+        'Tsumi(4) = 126
+        'Tsumi(5) = 121
+        'Tsumi(6) = 200
+        'Tsumi(7) = 157
+        R(0) = 2
+        R(1) = 2
+        R(2) = 1
+        R(3) = 0
+        R(4) = 3
+        R(5) = 0
+        R(6) = 4
+        R(7) = 0
+
+        Tsumi(0) = 462
+        Tsumi(1) = 436
+        Tsumi(2) = 464
+        Tsumi(3) = 466
+        Tsumi(4) = 472
+        Tsumi(5) = 490
+        Tsumi(6) = 465
+        Tsumi(7) = 465
         If input_box_for_E.Text <> "" Or input_box_for_m.Text <> "" Then
 
             btn_execute.Enabled = True
@@ -83,20 +100,25 @@
             btn_execute.Enabled = True
         End If
     End Sub
+
     Private Sub btn_execute_Handler(sender As Object, e As EventArgs) Handles btn_execute.Click
-        Dim T, Tsum(8), Ti(8), Tlast_sumi(8), Tsumj(40000), Eps, F(8), Ez As Double
-        Dim i, j, s, m, m_max As Int64
-        j = 1
+        Dim T, Tsum(8), Ti(8), Tlast_sumi(8), Tsumj(50001), Eps, F, Ez As Double
+        Dim i, j, s, m, m_max As Integer
+        j = 0
         If input_box_for_E.Text <> "" Then
             Ez = Val(input_box_for_E.Text)
+        Else
+            Ez = 1
         End If
         If input_box_for_m.Text <> "" Then
             m_max = Val(input_box_for_m.Text)
+        Else
+            m_max = 50000
         End If
         Eps = 0.0
         T = 0
         gamma = 0.85
-        Tgamma = 1.4
+        Tgamma = 1.645
         Treq1 = 200
         Treq2 = 400
         fill_initial_forms()
@@ -120,24 +142,29 @@
         Tsumj(0) = T
         fill_forms_after_first_interation(Ti, T)
         Do While Eps <= Ez And j < m_max
+            j += 1
             For i = 0 To n - 1
+
                 If R(i) = 0 Then
                     Tlast_sumi(i) = Ti(i)
 
                 Else
-                    s = 1
+                    s = 0
+                    F = 0
                     Do While s < R(i)
-                        Randomize()
-                        F(s) += CDbl(Rnd())
                         s = s + 1
+                        Randomize()
+                        F += Math.Log(CDbl(Rnd()))
+
                     Loop
-                    For s = 1 To R(i)
-                        Tlast_sumi(i) += Math.Log(F(s))
-                    Next
+
+                    Tlast_sumi(i) = (-1) * Ti(i) / F
                 End If
-                Tlast_sumi(i) += -1 * Ti(i) / Tlast_sumi(i)
+
             Next
-            Tsumj(j) += 1 / Tlast_sumi(i)
+            For i = 0 To n - 1
+                Tsumj(j) += 1 / Tlast_sumi(i)
+            Next
             Tsumj(j) = 1 / Tsumj(j)
             If j Mod 100 = 0 Then
                 Dim Temp1, Temp2 As Double
@@ -147,10 +174,9 @@
                     Temp2 += Tsumj(i) * Tsumj(i)
                 Next
 
-                Eps = Tgamma * Math.Sqrt((Math.Pow(Temp1, -2) * Temp2 * 1 / j) * (j / (j - 1)))
+                Eps = Tgamma * Math.Sqrt((Math.Pow(Temp1, -2) * Temp2 - 1 / j) * (j / (j - 1)))
 
             End If
-            j += 1
         Loop
         m = j
         T = 0
@@ -159,12 +185,13 @@
         Next
         T = 1 / T
         fill_forms_after_last_iteration(Tlast_sumi, T)
-        Array.Sort(Tsumj)
+
+        Array.Sort(Tsumj, 0, m)
         Dim gamma1, gamma2 As Double
         gamma1 = (1 - gamma) / 2
         gamma2 = (1 + gamma) / 2
-        Dim bottom As Integer = Math.Floor(m * gamma1)
-        Dim top As Integer = Math.Floor(m * gamma2)
+        Dim bottom As Integer = (m * gamma1)
+        Dim top As Integer = (m * gamma2)
         Dim Tb, Tt As Double
         Tb = Tsumj(bottom)
         Tt = Tsumj(top)
@@ -172,9 +199,12 @@
         box_for_gamma1.Text = gamma1
         box_for_gamma2.Text = gamma2
         box_for_Tmin.Text = Tsumj(0)
-        box_for_Tmax.Text = Tsumj(m)
+        box_for_Tmax.Text = Tsumj.Max()
         box_for_Tb.Text = Tb
         box_for_Ttop.Text = Tt
+        box_M_after_ex.Text = m
+        box_E_after_ex.Text = Eps
+
 
 
     End Sub
@@ -183,6 +213,13 @@
     Private Sub fill_forms_after_last_iteration(Tlast() As Double, T As Double)
         box_for_Ts1_after_ex.Text = Tlast(0)
         box_for_Ts2_after_ex.Text = Tlast(1)
+        box_for_Ts3_after_ex.Text = Tlast(2)
+        box_for_Ts4_after_ex.Text = Tlast(3)
+        box_for_Ts5_after_ex.Text = Tlast(4)
+        box_for_Ts6_after_ex.Text = Tlast(5)
+        box_for_Ts7_after_ex.Text = Tlast(6)
+        box_for_Ts8_after_ex.Text = Tlast(7)
+        box_for_T_after_ex.Text = T
     End Sub
     Private Sub fill_initial_forms()
         box_for_n.Text = 8

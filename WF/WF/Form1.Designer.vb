@@ -40,16 +40,16 @@ Partial Class Form1
         Me.Label17 = New System.Windows.Forms.Label()
         Me.box_for_T_after_ex = New System.Windows.Forms.TextBox()
         Me.Label16 = New System.Windows.Forms.Label()
-        Me.TextBox36 = New System.Windows.Forms.TextBox()
-        Me.TextBox37 = New System.Windows.Forms.TextBox()
-        Me.TextBox38 = New System.Windows.Forms.TextBox()
-        Me.TextBox39 = New System.Windows.Forms.TextBox()
-        Me.TextBox40 = New System.Windows.Forms.TextBox()
-        Me.TextBox41 = New System.Windows.Forms.TextBox()
+        Me.box_for_Ts8_after_ex = New System.Windows.Forms.TextBox()
+        Me.box_for_Ts7_after_ex = New System.Windows.Forms.TextBox()
+        Me.box_for_Ts6_after_ex = New System.Windows.Forms.TextBox()
+        Me.box_for_Ts5_after_ex = New System.Windows.Forms.TextBox()
+        Me.box_for_Ts4_after_ex = New System.Windows.Forms.TextBox()
+        Me.box_for_Ts3_after_ex = New System.Windows.Forms.TextBox()
         Me.box_for_Ts2_after_ex = New System.Windows.Forms.TextBox()
         Me.box_for_Ts1_after_ex = New System.Windows.Forms.TextBox()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.bot_E_after_ex = New System.Windows.Forms.TextBox()
+        Me.box_E_after_ex = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.box_M_after_ex = New System.Windows.Forms.TextBox()
         Me.Label13 = New System.Windows.Forms.Label()
@@ -261,53 +261,53 @@ Partial Class Form1
         Me.Label16.TabIndex = 136
         Me.Label16.Text = "Средняя наработка на отказ всего изделия (T) j=m"
         '
-        'TextBox36
+        'box_for_Ts8_after_ex
         '
-        Me.TextBox36.Location = New System.Drawing.Point(668, 246)
-        Me.TextBox36.Name = "TextBox36"
-        Me.TextBox36.ReadOnly = True
-        Me.TextBox36.Size = New System.Drawing.Size(51, 20)
-        Me.TextBox36.TabIndex = 135
+        Me.box_for_Ts8_after_ex.Location = New System.Drawing.Point(668, 246)
+        Me.box_for_Ts8_after_ex.Name = "box_for_Ts8_after_ex"
+        Me.box_for_Ts8_after_ex.ReadOnly = True
+        Me.box_for_Ts8_after_ex.Size = New System.Drawing.Size(51, 20)
+        Me.box_for_Ts8_after_ex.TabIndex = 135
         '
-        'TextBox37
+        'box_for_Ts7_after_ex
         '
-        Me.TextBox37.Location = New System.Drawing.Point(611, 246)
-        Me.TextBox37.Name = "TextBox37"
-        Me.TextBox37.ReadOnly = True
-        Me.TextBox37.Size = New System.Drawing.Size(51, 20)
-        Me.TextBox37.TabIndex = 134
+        Me.box_for_Ts7_after_ex.Location = New System.Drawing.Point(611, 246)
+        Me.box_for_Ts7_after_ex.Name = "box_for_Ts7_after_ex"
+        Me.box_for_Ts7_after_ex.ReadOnly = True
+        Me.box_for_Ts7_after_ex.Size = New System.Drawing.Size(51, 20)
+        Me.box_for_Ts7_after_ex.TabIndex = 134
         '
-        'TextBox38
+        'box_for_Ts6_after_ex
         '
-        Me.TextBox38.Location = New System.Drawing.Point(554, 246)
-        Me.TextBox38.Name = "TextBox38"
-        Me.TextBox38.ReadOnly = True
-        Me.TextBox38.Size = New System.Drawing.Size(51, 20)
-        Me.TextBox38.TabIndex = 133
+        Me.box_for_Ts6_after_ex.Location = New System.Drawing.Point(554, 246)
+        Me.box_for_Ts6_after_ex.Name = "box_for_Ts6_after_ex"
+        Me.box_for_Ts6_after_ex.ReadOnly = True
+        Me.box_for_Ts6_after_ex.Size = New System.Drawing.Size(51, 20)
+        Me.box_for_Ts6_after_ex.TabIndex = 133
         '
-        'TextBox39
+        'box_for_Ts5_after_ex
         '
-        Me.TextBox39.Location = New System.Drawing.Point(495, 246)
-        Me.TextBox39.Name = "TextBox39"
-        Me.TextBox39.ReadOnly = True
-        Me.TextBox39.Size = New System.Drawing.Size(51, 20)
-        Me.TextBox39.TabIndex = 132
+        Me.box_for_Ts5_after_ex.Location = New System.Drawing.Point(495, 246)
+        Me.box_for_Ts5_after_ex.Name = "box_for_Ts5_after_ex"
+        Me.box_for_Ts5_after_ex.ReadOnly = True
+        Me.box_for_Ts5_after_ex.Size = New System.Drawing.Size(51, 20)
+        Me.box_for_Ts5_after_ex.TabIndex = 132
         '
-        'TextBox40
+        'box_for_Ts4_after_ex
         '
-        Me.TextBox40.Location = New System.Drawing.Point(438, 246)
-        Me.TextBox40.Name = "TextBox40"
-        Me.TextBox40.ReadOnly = True
-        Me.TextBox40.Size = New System.Drawing.Size(51, 20)
-        Me.TextBox40.TabIndex = 131
+        Me.box_for_Ts4_after_ex.Location = New System.Drawing.Point(438, 246)
+        Me.box_for_Ts4_after_ex.Name = "box_for_Ts4_after_ex"
+        Me.box_for_Ts4_after_ex.ReadOnly = True
+        Me.box_for_Ts4_after_ex.Size = New System.Drawing.Size(51, 20)
+        Me.box_for_Ts4_after_ex.TabIndex = 131
         '
-        'TextBox41
+        'box_for_Ts3_after_ex
         '
-        Me.TextBox41.Location = New System.Drawing.Point(381, 246)
-        Me.TextBox41.Name = "TextBox41"
-        Me.TextBox41.ReadOnly = True
-        Me.TextBox41.Size = New System.Drawing.Size(51, 20)
-        Me.TextBox41.TabIndex = 130
+        Me.box_for_Ts3_after_ex.Location = New System.Drawing.Point(381, 246)
+        Me.box_for_Ts3_after_ex.Name = "box_for_Ts3_after_ex"
+        Me.box_for_Ts3_after_ex.ReadOnly = True
+        Me.box_for_Ts3_after_ex.Size = New System.Drawing.Size(51, 20)
+        Me.box_for_Ts3_after_ex.TabIndex = 130
         '
         'box_for_Ts2_after_ex
         '
@@ -334,13 +334,13 @@ Partial Class Form1
         Me.Label15.TabIndex = 127
         Me.Label15.Text = "Наработка блоков за период испытания (Tsi) j=m"
         '
-        'bot_E_after_ex
+        'box_E_after_ex
         '
-        Me.bot_E_after_ex.Location = New System.Drawing.Point(616, 220)
-        Me.bot_E_after_ex.Name = "bot_E_after_ex"
-        Me.bot_E_after_ex.ReadOnly = True
-        Me.bot_E_after_ex.Size = New System.Drawing.Size(100, 20)
-        Me.bot_E_after_ex.TabIndex = 126
+        Me.box_E_after_ex.Location = New System.Drawing.Point(616, 220)
+        Me.box_E_after_ex.Name = "box_E_after_ex"
+        Me.box_E_after_ex.ReadOnly = True
+        Me.box_E_after_ex.Size = New System.Drawing.Size(100, 20)
+        Me.box_E_after_ex.TabIndex = 126
         '
         'Label14
         '
@@ -804,16 +804,16 @@ Partial Class Form1
         Me.Controls.Add(Me.Label17)
         Me.Controls.Add(Me.box_for_T_after_ex)
         Me.Controls.Add(Me.Label16)
-        Me.Controls.Add(Me.TextBox36)
-        Me.Controls.Add(Me.TextBox37)
-        Me.Controls.Add(Me.TextBox38)
-        Me.Controls.Add(Me.TextBox39)
-        Me.Controls.Add(Me.TextBox40)
-        Me.Controls.Add(Me.TextBox41)
+        Me.Controls.Add(Me.box_for_Ts8_after_ex)
+        Me.Controls.Add(Me.box_for_Ts7_after_ex)
+        Me.Controls.Add(Me.box_for_Ts6_after_ex)
+        Me.Controls.Add(Me.box_for_Ts5_after_ex)
+        Me.Controls.Add(Me.box_for_Ts4_after_ex)
+        Me.Controls.Add(Me.box_for_Ts3_after_ex)
         Me.Controls.Add(Me.box_for_Ts2_after_ex)
         Me.Controls.Add(Me.box_for_Ts1_after_ex)
         Me.Controls.Add(Me.Label15)
-        Me.Controls.Add(Me.bot_E_after_ex)
+        Me.Controls.Add(Me.box_E_after_ex)
         Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.box_M_after_ex)
         Me.Controls.Add(Me.Label13)
@@ -890,16 +890,16 @@ Partial Class Form1
     Friend WithEvents Label17 As Label
     Friend WithEvents box_for_T_after_ex As TextBox
     Friend WithEvents Label16 As Label
-    Friend WithEvents TextBox36 As TextBox
-    Friend WithEvents TextBox37 As TextBox
-    Friend WithEvents TextBox38 As TextBox
-    Friend WithEvents TextBox39 As TextBox
-    Friend WithEvents TextBox40 As TextBox
-    Friend WithEvents TextBox41 As TextBox
+    Friend WithEvents box_for_Ts8_after_ex As TextBox
+    Friend WithEvents box_for_Ts7_after_ex As TextBox
+    Friend WithEvents box_for_Ts6_after_ex As TextBox
+    Friend WithEvents box_for_Ts5_after_ex As TextBox
+    Friend WithEvents box_for_Ts4_after_ex As TextBox
+    Friend WithEvents box_for_Ts3_after_ex As TextBox
     Friend WithEvents box_for_Ts2_after_ex As TextBox
     Friend WithEvents box_for_Ts1_after_ex As TextBox
     Friend WithEvents Label15 As Label
-    Friend WithEvents bot_E_after_ex As TextBox
+    Friend WithEvents box_E_after_ex As TextBox
     Friend WithEvents Label14 As Label
     Friend WithEvents box_M_after_ex As TextBox
     Friend WithEvents Label13 As Label
