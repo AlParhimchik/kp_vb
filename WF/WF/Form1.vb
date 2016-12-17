@@ -28,40 +28,24 @@
     End Sub
 
     Private Sub RadioButton3_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton3.CheckedChanged
-        'R(0) = 3
-        'R(1) = 1
-        'R(2) = 0
-        'R(3) = 0
-        'R(4) = 0
-        'R(5) = 1
-        'R(6) = 3
-        'R(7) = 2
-
-        'Tsumi(0) = 160
-        'Tsumi(1) = 187
-        'Tsumi(2) = 143
-        'Tsumi(3) = 129
-        'Tsumi(4) = 126
-        'Tsumi(5) = 121
-        'Tsumi(6) = 200
-        'Tsumi(7) = 157
-        R(0) = 2
-        R(1) = 2
-        R(2) = 1
+        R(0) = 3
+        R(1) = 1
+        R(2) = 0
         R(3) = 0
-        R(4) = 3
-        R(5) = 0
-        R(6) = 4
-        R(7) = 0
+        R(4) = 0
+        R(5) = 1
+        R(6) = 3
+        R(7) = 2
 
-        Tsumi(0) = 462
-        Tsumi(1) = 436
-        Tsumi(2) = 464
-        Tsumi(3) = 466
-        Tsumi(4) = 472
-        Tsumi(5) = 490
-        Tsumi(6) = 465
-        Tsumi(7) = 465
+        Tsumi(0) = 160
+        Tsumi(1) = 187
+        Tsumi(2) = 143
+        Tsumi(3) = 129
+        Tsumi(4) = 126
+        Tsumi(5) = 121
+        Tsumi(6) = 200
+        Tsumi(7) = 157
+
         If input_box_for_E.Text <> "" Or input_box_for_m.Text <> "" Then
 
             btn_execute.Enabled = True
@@ -118,7 +102,7 @@
         Eps = 0.0
         T = 0
         gamma = 0.85
-        Tgamma = 1.645
+        Tgamma = 1.4
         Treq1 = 200
         Treq2 = 400
         fill_initial_forms()
