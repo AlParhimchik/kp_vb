@@ -102,6 +102,7 @@ Partial Class Form1
         Me.Label2 = New System.Windows.Forms.Label()
         Me.group_box_for_radio_btn = New System.Windows.Forms.GroupBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.btn_save = New System.Windows.Forms.Button()
         Me.group_box_for_radio_btn.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -781,11 +782,21 @@ Partial Class Form1
         Me.Label1.Text = "Расчетно-экспериментальный метод оценки показателей надежности изделея по результ" &
     "атам кратковременных испытаний"
         '
+        'btn_save
+        '
+        Me.btn_save.Location = New System.Drawing.Point(301, 395)
+        Me.btn_save.Name = "btn_save"
+        Me.btn_save.Size = New System.Drawing.Size(75, 23)
+        Me.btn_save.TabIndex = 154
+        Me.btn_save.Text = "Сохранить в Excel"
+        Me.btn_save.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(846, 430)
+        Me.Controls.Add(Me.btn_save)
         Me.Controls.Add(Me.btn_execute)
         Me.Controls.Add(Me.box_for_gamma2)
         Me.Controls.Add(Me.Label24)
@@ -952,4 +963,5 @@ Partial Class Form1
     Friend WithEvents Label2 As Label
     Friend WithEvents group_box_for_radio_btn As GroupBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents btn_save As Button
 End Class
