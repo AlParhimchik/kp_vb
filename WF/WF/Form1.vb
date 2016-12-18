@@ -1,4 +1,5 @@
-﻿Public Class Form1
+﻿Imports Microsoft.Office.Interop.Excel
+Public Class Form1
     Dim R(8), Tsumi(8) As Integer
     Dim gamma, Tgamma, Treq1, Treq2 As Double
     Dim n As Integer = 8
@@ -207,6 +208,8 @@
             count(j) += 1
         Next
 
+
+
         insert_to_Excel(T_diagram, count)
     End Sub
 
@@ -217,9 +220,7 @@
         Dim filePath As String = My.Application.Info.DirectoryPath + "\GRAFIK.xlsx"
         If My.Computer.FileSystem.FileExists(filePath) Then
             My.Computer.FileSystem.DeleteFile(filePath)
-            MsgBox("File was found")
         End If
-
         'Открыть новую книгу Excel
         oExcel = CreateObject("Excel.Application")
         oBook = oExcel.Workbooks.Add
@@ -239,10 +240,22 @@
 
         'Передать массив на лист, начиная с ячейки A2
         oSheet.Range("A2").Resize(20, 2).Value = DataArray
+        'Добавляем график
+        Dim myChart As ChartObject
 
+        myChart = oSheet.ChartObjects.Add(100, 50, 400, 200)
+        With myChart
+            .Chart.SetSourceData(oSheet.Range("A2:B19"))
+            .Chart.ChartType = XlChartType.xlXYScatterLines
+        End With
         'Сохранить книгу и закрыть Excel
         oBook.SaveAs(filePath)
         oExcel.Quit()
+
+        oExcel.WorkBooks.open(filePath)
+        oExcel.Visible = True
+
+
     End Sub
     Private Sub fill_forms_after_last_iteration(Tlast() As Double, T As Double)
         box_for_Ts1_after_ex.Text = Tlast(0)

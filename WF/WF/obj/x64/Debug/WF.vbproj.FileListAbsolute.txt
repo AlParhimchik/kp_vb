@@ -9,3 +9,5 @@ D:\Загрузки\WF\WF\WF\obj\x64\Debug\WF.vbproj.GenerateResource.Cache
 D:\Загрузки\WF\WF\WF\obj\x64\Debug\WF.exe
 D:\Загрузки\WF\WF\WF\obj\x64\Debug\WF.xml
 D:\Загрузки\WF\WF\WF\obj\x64\Debug\WF.pdb
+D:\Загрузки\WF\WF\WF\obj\x64\Debug\WF.form_chart.resources
+D:\Загрузки\WF\WF\WF\obj\x64\Debug\WF.vbproj.ResolveComReference.cache
